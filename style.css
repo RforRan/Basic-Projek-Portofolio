@@ -1,0 +1,141 @@
+/* Background Styles */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: url(Background.jpg);
+  padding-top: 100px;
+}
+
+/* Section Background */
+.hero-section {
+  background-color: rgb(134, 129, 129);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0.95;
+}
+
+/* Transparent Navbar with Blur */
+.navbar {
+  background-color: rgba(33, 37, 41, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Rest of your existing CSS */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+.greeting {
+  font-size: 1.2em;
+  margin: 20px 0;
+  color: #000000;
+}
+
+.container-mylink {
+  background-color: rgb(190, 187, 187);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+}
+
+/* Skill Icons Styling */
+.skill-item {
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-10px);
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+/* Specific colors for each skill */
+.fa-python {
+  color: #306998;
+}
+
+.fa-html5 {
+  color: #e34f26;
+}
+
+.fa-css3-alt {
+  color: #264de4;
+}
+
+.fa-database {
+  color: #00758f;
+}
+
+.fa-github {
+  color: black;
+}
+
+.fa-instagram {
+  color: purple;
+}
+
+.fa-whatsapp {
+  color: green;
+}
+
+.gallery-section {
+  background-color: rgb(134, 129, 129);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0.95;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skill-icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .card-img-top {
+    height: 180px;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
